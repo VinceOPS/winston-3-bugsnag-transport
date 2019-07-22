@@ -1,0 +1,8 @@
+.vscode
+src/
+tsconfig*
+yarn.lock
+jest.config.js
+.prettierrc
+tslint.json
+yarn-error.log

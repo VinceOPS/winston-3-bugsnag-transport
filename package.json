@@ -1,6 +1,6 @@
 {
   "name": "winston-3-bugsnag-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bugsnag Transport for Winston 3",
   "repository": "https://github.com/VinceOPS/winston-3-bugsnag-transport",
   "author": "VinceOPS <vincent@gojob.com>",

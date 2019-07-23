@@ -1,9 +1,9 @@
 import bugsnag, { Bugsnag } from '@bugsnag/js';
-import * as Transport from 'winston-transport';
-import * as _ from 'lodash';
+import Transport from 'winston-transport';
+import _ from 'lodash';
 
 type BugsnagConfig = Exclude<Parameters<typeof bugsnag>[0], string>;
-type TransportConfig = ConstructorParameters<typeof Transport>[0];
+type TransportConfig = Transport.TransportStreamOptions;
 
 type WinstonLogLevel = 'silly' | 'debug' | 'verbose' | 'info' | 'warn' | 'error';
 type BugsnagLogSeverity = 'info' | 'warning' | 'error';

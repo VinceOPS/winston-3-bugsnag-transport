@@ -1,7 +1,9 @@
-# Winston 3 Bugsnag
+# Winston 3 Bugsnag Transport
 
 [Bugsnag](https://github.com/bugsnag/bugsnag-js) transport for the logger [Winston](https://github.com/winstonjs/winston) (v3+).  
-Relies on the official client [@bugsnag/js](https://github.com/bugsnag/bugsnag-js).
+Relies on the official client [@bugsnag/js](https://github.com/bugsnag/bugsnag-js).  
+
+⚠ `esModuleInterop` is required in your `tsconfig` in order for this project to be imported.
 
 ## Getting started
 
@@ -16,7 +18,7 @@ npm install --save winston-3-bugsnag-transport
 Create a winston logger and pass a new instance of `BugsnagTransport` to it. The constructor accepts any property from the default configuration of Winston `Transport`s and an additional property `bugsnag` taking a [configuration](https://docs.bugsnag.com/platforms/javascript/configuration-options/) for the bugsnag client (`@bugsnag/js`, as of v6.3+).
 
 ```typescript
-import * as winston from 'winston';
+import winston from 'winston';
 import { BugsnagTransport } from './bugsnag-transport';
 
 const logger = winston.createLogger({

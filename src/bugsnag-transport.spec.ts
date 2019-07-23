@@ -1,13 +1,10 @@
 const mockedClient = { notify: jest.fn() };
 const mockBugsnag = jest.fn().mockReturnValue(mockedClient);
-jest.mock('@bugsnag/js', () => ({
-  __esModule: true,
-  default: mockBugsnag,
-}));
+jest.mock('@bugsnag/js', () => mockBugsnag);
 
 import bugsnag from '@bugsnag/js';
-import * as winston from 'winston';
-import * as Transport from 'winston-transport';
+import winston from 'winston';
+import Transport from 'winston-transport';
 
 import { BugsnagTransport, BugsnagTransportConfig } from './bugsnag-transport';
 

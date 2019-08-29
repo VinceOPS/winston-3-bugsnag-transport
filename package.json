@@ -1,6 +1,6 @@
 {
   "name": "winston-3-bugsnag-transport",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bugsnag Transport for Winston 3",
   "repository": "https://github.com/VinceOPS/winston-3-bugsnag-transport",
   "author": "VinceOPS <vincent@gojob.com>",
@@ -19,22 +19,22 @@
     "transport"
   ],
   "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "@types/lodash": "^4.14.136",
+    "@types/jest": "^24.0.18",
+    "@types/lodash": "^4.14.138",
     "@types/node": "^12.0.2",
-    "@typescript-eslint/eslint-plugin": "^1.13.0",
-    "@typescript-eslint/parser": "^1.13.0",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "prettier": "^1.17.1",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.5.3",
+    "typescript": "^3.6.2",
     "winston": "^3.2.1"
   },
   "dependencies": {
-    "@bugsnag/js": "^6.3.2",
+    "@bugsnag/js": "^6.4.0",
     "lodash": "^4.17.15",
     "winston-transport": "^4.3.0"
   }

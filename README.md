@@ -19,7 +19,7 @@ Create a winston logger and pass a new instance of `BugsnagTransport` to it. The
 
 ```typescript
 import winston from 'winston';
-import { BugsnagTransport } from './bugsnag-transport';
+import { BugsnagTransport } from 'winston-3-bugsnag-transport';
 
 const logger = winston.createLogger({
   level: 'info',
